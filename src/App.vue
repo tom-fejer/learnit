@@ -1,11 +1,4 @@
 <template>
-  <el-header>
-  </el-header>
-  <el-main>
-    <Login />
-    <Profile />
-    <Progress />
-  </el-main>
 </template>
 
 <script>
