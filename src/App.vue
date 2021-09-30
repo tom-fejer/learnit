@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div class="flex flex-col flex-wrap content-center items-center p-3">
     <div
       class="
         text-xl
@@ -14,10 +14,10 @@
     </div>
     <Progress v-if="userIsLoggedIn()" />
     <Login v-else />
-    <Button class="m-1"/>
-    <Button class="m-1"/>
-    <Button class="m-1"/>
-    <Button class="m-1"/>
+    <Button class="m-1" />
+    <Button class="m-1" />
+    <Button class="m-1" />
+    <Button class="m-1" />
   </div>
 </template>
 
@@ -46,8 +46,5 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.main-container {
-  @apply flex flex-col flex-wrap content-center items-center p-3;
 }
 </style>
