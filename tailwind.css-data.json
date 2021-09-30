@@ -4,6 +4,7 @@
       { "name": "tailwind", "description": "Tailwind custom 'at' directives file" }
     ],
     "atDirectives": [
-      { "name": "@tailwind", "description": "Tailwind at directive" }
+      { "name": "@tailwind", "description": "Tailwind at directive" },
+      { "name": "@apply", "description": "Tailwind apply directive" }
     ]
   }
