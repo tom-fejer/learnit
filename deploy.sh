@@ -18,3 +18,6 @@ git add -A
 git commit -m 'deploy'
 git push -f git@github.com:tom-fejer/learnit.git master:gh-pages
 cd -
+
+# switching back to previous branch
+git checkout $current_branch
