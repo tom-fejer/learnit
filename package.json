@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vite preview",
     "build": "vite build",
+    "deploy": "sh deploy.sh",
     "dev": "vite",
     "lint": "eslint --ext .js,.vue",
-    "deploy": "sh deploy.sh"
+    "serve": "vite preview",
+    "set-version": "node set-version.js"
   },
   "dependencies": {
     "vue": "^3.0.0",
