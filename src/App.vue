@@ -1,37 +1,18 @@
 <template>
-  <div class="flex flex-col flex-wrap content-center items-center p-3">
-    <div
-      class="
-        text-xl
-        bg-gray-100
-        text-black
-        dark:bg-gray-600
-        dark:text-gray-100
-        p-44
-      "
-    >
-      Hello World!
-    </div>
-    <Progress v-if="userIsLoggedIn()" />
-    <Login v-else />
-    <Button class="m-1" />
-    <Button class="m-1" />
-    <Button class="m-1" />
-    <Button class="m-1" />
-  </div>
+  <NavBar/>
+  <router-view v-slot="{ Component }">
+    <transition name="slide-fade">
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
 <script>
-import Progress from "./views/Progress.vue";
-import Login from "./views/Login.vue";
-import Button from "./components/elements/Button.vue";
+import NavBar from '@/components/NavBar.vue'
 
 export default {
-  name: "App",
   components: {
-    Progress,
-    Login,
-    Button,
+    NavBar
   },
   methods: {
     userIsLoggedIn() {
