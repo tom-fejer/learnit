@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    <div>Progress</div>
+  </div>
 </template>
 
 <script>
