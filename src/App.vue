@@ -1,7 +1,7 @@
 <template>
   <NavBar/>
   <router-view v-slot="{ Component }">
-    <transition name="slide" mode="out-in">
+    <transition name="fade" mode="out-in">
       <component :is="Component" :key="$route.path"/>
     </transition>
   </router-view>
@@ -29,14 +29,14 @@ export default {
     -moz-osx-font-smoothing: grayscale;
   }
 
-  .slide-enter-active,
-  .slide-leave-active {
+  .fade-enter-active,
+  .fade-leave-active {
     transition: opacity 1s, transform 1s;
   }
 
-  .slide-enter-from,
-  .slide-leave-from {
+  .fade-enter-from,
+  .fade-leave-to {
     opacity: 0;
-    transform: translateX(-30%);
+		transition: opacity 1s, transform 1s;
   }
 </style>
