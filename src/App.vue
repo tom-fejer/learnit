@@ -31,12 +31,11 @@ export default {
 
   .fade-enter-active,
   .fade-leave-active {
-    transition: opacity 1s, transform 1s;
+    transition: opacity .4s;
   }
 
   .fade-enter-from,
   .fade-leave-to {
     opacity: 0;
-		transition: opacity 1s, transform 1s;
-  }
+}
 </style>
